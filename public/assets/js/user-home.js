@@ -34,3 +34,15 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const pageLoader = document.getElementById("page-loader");
+
+    window.addEventListener("load", function () {
+        if (pageLoader) {
+            setTimeout(function () {
+                pageLoader.classList.add("hide");
+            }, 700);
+        }
+    });
+});

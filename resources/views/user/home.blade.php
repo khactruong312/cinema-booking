@@ -145,7 +145,7 @@
 
             <nav class="nav-menu">
                 <a href="{{ route('home') }}" class="active">Trang chủ</a>
-                <a href="#">Phim</a>
+                <a href="{{ route('user.movies.index') }}">Phim</a>
                 <a href="#">Rạp</a>
                 <a href="#">Lịch chiếu</a>
                 <a href="#">Khuyến mãi</a>
@@ -155,14 +155,14 @@
             <div class="nav-action">
                 <input type="text" class="search-box" placeholder="Tìm phim...">
 
-                {{-- @guest
+                @guest
                     <a href="{{ route('login') }}" class="btn-login">Đăng nhập</a>
                     <a href="{{ route('register') }}" class="btn-register">Đăng ký</a>
                 @else
                     <a href="#" class="btn-register">
                         <i class="fa-solid fa-user"></i> {{ Auth::user()->name }}
                     </a>
-                @endguest --}}
+                @endguest
             </div>
 
         </div>
