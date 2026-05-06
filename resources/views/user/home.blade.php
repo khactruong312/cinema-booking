@@ -139,7 +139,7 @@
         <div class="d-flex justify-content-between align-items-center">
 
             <a href="{{ route('home') }}" class="d-flex align-items-center gap-2 text-decoration-none">
-                <img src="{{ asset('assets/images/logo.png') }}" class="logo-img" alt="CineHome Logo">
+                {{-- <img src="{{ asset('assets/images/logo.png') }}" class="logo-img" alt="CineHome Logo"> --}}
                 <div class="brand-text">Cine<span>Home</span></div>
             </a>
 
